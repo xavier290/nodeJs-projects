@@ -1,0 +1,14 @@
+{
+  "name": "uploadsaveimages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "formidable": "^2.0.1"
+  }
+}
