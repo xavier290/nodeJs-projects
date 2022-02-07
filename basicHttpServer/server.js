@@ -8,9 +8,9 @@ function start(path) {
 
     function onRequest(req, res) {
         let q = url.parse(req.url, true);
-        let pathvalue = path(q.pathname)
+        let pathvalue = path(q.pathname);
         
-        fs.readFile(pathvalue.file, (err, data) => {
+        fs.readFile(pathvalue.file, 'UTF-8', (err, data) => {
             res.statusCode = pathvalue.code;
             res.setHeader('Content-Type', 'text/html');
             res.write(data);
